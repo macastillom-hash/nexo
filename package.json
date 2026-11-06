@@ -1,0 +1,10 @@
+{
+  "name": "nexo-estudio-sitio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "formidable": "^3.5.4",
+    "resend": "^6.0.0"
+  }
+}

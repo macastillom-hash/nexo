@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#10231d">
+    <meta name="description" content="Nexo Estudio. Soluciones de diseño web y experiencias digitales. Sitio web de demostración.">
+    <title>Contacto | Nexo Estudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header" id="top">
+        <div class="container nav-wrap">
+            <a class="logo" href="index.html" aria-label="Nexo Estudio, inicio"><span class="logo-mark" aria-hidden="true">n<span>·</span></span><span class="logo-text">nexo<span>estudio</span></span></a>
+            <nav class="main-nav" aria-label="Navegación principal">
+                <a class=""  href="index.html">Home</a>
+<a class=""  href="quienes-somos.html">Quiénes somos</a>
+<a class="active" aria-current="page" href="contacto.html">Contacto</a>
+                <a class="nav-cta" href="contacto.html">Cotizar proyecto <span aria-hidden="true">↗</span></a>
+            </nav>
+            <details class="mobile-menu">
+                <summary aria-label="Abrir menú de navegación" title="Menú"><span></span><span></span><span></span></summary>
+                <nav class="mobile-menu-panel" aria-label="Menú para dispositivos móviles">
+                    <a  href="index.html">Home</a>
+<a  href="quienes-somos.html">Quiénes somos</a>
+<a aria-current="page" href="contacto.html">Contacto</a>
+                    <a class="mobile-cta" href="contacto.html">Cotizar proyecto ↗</a>
+                </nav>
+            </details>
+        </div>
+    </header>
+<main id="contenido">
+    <section class="page-banner contact-banner"><div class="container"><span class="eyebrow eyebrow-light"><span class="eyebrow-dot"></span> Estamos a un mensaje de distancia</span><h1>Hablemos de lo que<br>tienes <em>en mente.</em></h1><p>Completa el formulario y cuéntanos tu idea, duda o solicitud de cotización.</p></div><div class="banner-shape" aria-hidden="true">✳</div></section>
+    <section class="section contact-section"><div class="container contact-layout">
+        <div class="contact-info"><span class="eyebrow"><span class="eyebrow-dot"></span> Empecemos por aquí</span><h2>Todo gran proyecto comienza con una <em>conversación.</em></h2><p>Queremos entender lo que necesitas. También puedes seleccionar imágenes o archivos PDF para explicar mejor tu solicitud.</p><div class="contact-tip"><span>✳</span><div><strong>Una idea, muchas posibilidades</strong><p>Describe tu solicitud con el mayor detalle posible. Los archivos son opcionales.</p></div></div><div class="contact-photo"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=82" alt="Computador portátil sobre una mesa de trabajo" loading="lazy"></div></div>
+        <div class="form-card"><div class="form-topline"><span class="form-badge">✳ Cuéntanos tu proyecto</span><span class="form-time">Formulario de contacto</span></div><h2>Tu solicitud empieza aquí</h2><p>Los campos marcados con <span class="required">*</span> son obligatorios.</p>
+            <div id="form-alert" class="form-alert" role="status" aria-live="polite" hidden></div>
+            <form id="contact-form" enctype="multipart/form-data" method="post">
+                <div class="form-row">
+                    <div class="field"><label for="nombre">Nombre <span class="required">*</span></label><input type="text" id="nombre" name="nombre" maxlength="70" minlength="2" placeholder="Tu nombre" autocomplete="given-name" required></div>
+                    <div class="field"><label for="apellido">Apellido <span class="required">*</span></label><input type="text" id="apellido" name="apellido" maxlength="70" minlength="2" placeholder="Tu apellido" autocomplete="family-name" required></div>
+                </div>
+                <div class="field"><label for="correo">Correo electrónico <span class="required">*</span></label><input type="email" id="correo" name="correo" maxlength="254" placeholder="tu@correo.com" autocomplete="email" required></div>
+                <div class="field"><label for="tipo">Tipo de consulta <span class="required">*</span></label><div class="select-wrap"><select name="tipo" id="tipo" required><option value="">Selecciona una opción</option><option value="dudas">Dudas</option><option value="cotizar">Cotizar</option><option value="otro">Otro</option></select></div></div>
+                <div class="field"><label for="descripcion">Descripción de tu solicitud <span class="required">*</span></label><textarea name="descripcion" id="descripcion" minlength="15" maxlength="2000" rows="6" placeholder="Cuéntanos qué necesitas, qué tienes en mente o qué te gustaría cotizar..." required></textarea><div class="field-bottom"><small>Escribe una descripción de al menos 15 caracteres.</small><small>Máximo 2000 caracteres</small></div></div>
+                <div class="field"><label for="archivos">Adjuntar imágenes o PDF <span class="optional">Opcional</span></label><div class="file-pick-area"><p>Selecciona desde tu computador archivos de referencia.</p><input type="file" id="archivos" name="archivos[]" accept=".jpg,.jpeg,.png,.webp,.pdf,image/jpeg,image/png,image/webp,application/pdf" multiple><small>Formatos permitidos: JPG, JPEG, PNG, WEBP y PDF. Máximo 5 archivos y 3 MB en total.</small><ul id="file-list" class="file-list" aria-live="polite"></ul></div></div>
+                <div class="honeypot" aria-hidden="true"><label for="website">No completar este campo</label><input type="text" id="website" name="website" tabindex="-1" autocomplete="off"></div>
+                <button class="btn btn-dark btn-submit" id="submit-contact" type="submit">Enviar solicitud <span>↗</span></button>
+                <p class="form-disclaimer">Tu correo se utilizará para responder a esta solicitud. Los archivos adjuntos son opcionales y se enviarán junto con el mensaje.</p>
+            </form>
+        </div>
+    </div></section>
+    <section class="faq-section section"><div class="container"><div class="faq-heading"><span class="eyebrow"><span class="eyebrow-dot"></span> Información útil</span><h2>¿Necesitas <em>saber algo más?</em></h2></div><div class="faq-list"><details><summary>¿Qué archivos puedo seleccionar? <span>+</span></summary><p>Puedes adjuntar imágenes JPG, PNG o WEBP y documentos PDF. Se permiten hasta 5 archivos con un peso total máximo de 3 MB.</p></details><details><summary>¿Puedo solicitar cotización sin archivos? <span>+</span></summary><p>Sí. Adjuntar documentos es completamente opcional.</p></details><details><summary>¿Cuándo funcionará el botón de enviar? <span>+</span></summary><p>El formulario envía tu solicitud por correo electrónico. Recibirás una confirmación en pantalla cuando el envío se complete correctamente.</p></details></div></div></section>
+</main>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div><a class="logo footer-logo" href="index.html"><span class="logo-mark" aria-hidden="true">n<span>·</span></span><span class="logo-text">nexo<span>estudio</span></span></a><p>Ideas que conectan. Diseñamos experiencias digitales sencillas, útiles y memorables.</p></div>
+                <div class="footer-links"><strong>Explorar</strong><a href="index.html">Home</a><a href="quienes-somos.html">Quiénes somos</a><a href="contacto.html">Contacto</a></div>
+                <div class="footer-links"><strong>Hablemos</strong><a href="contacto.html">Solicitar cotización</a><a href="contacto.html">Resolver una duda</a><span>Sitio de demostración</span></div>
+            </div>
+            <div class="footer-bottom"><span>© 2026 Nexo Estudio. Sitio de ejemplo personalizable.</span><a href="#top">Volver arriba ↑</a></div>
+        </div>
+    </footer>
+    <script src="js/contacto.js" defer></script>
+</body>
+</html>

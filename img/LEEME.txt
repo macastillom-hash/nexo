@@ -1,0 +1,1 @@
+Carpeta disponible para guardar imágenes JPG/PNG/WEBP descargadas de fuentes autorizadas.
